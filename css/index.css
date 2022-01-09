@@ -1,0 +1,126 @@
+* {
+    font-family: 'Bebas Neue', Times;
+    color: white;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://unsplash.com/photos/iDF0FXUxGhE/download?ixid=MnwxMjA3fDB8MXx0b3BpY3x8Ym84alFLVGFFMFl8fHx8fDJ8fDE2NDA4MDYwMDc&force=true&w=1920');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    margin-top: 3%;
+    z-index: 2;
+}
+a {
+    text-decoration: none;
+    color: grey;
+}
+select {
+    font-size: 1.25vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+}
+input {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 8vw;
+    margin: 2px;
+    color: white;
+    text-align: center;
+    font-size: 1.25vw;
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    font-size: 1.25vw;
+}
+button:hover {
+    cursor: pointer;
+}
+.section {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    justify-content: space-around;
+}
+#modal {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    margin-top: 10%;
+    width: 30%;
+    text-align: center;
+    height: 40%;
+    font-size: 1.75vw;
+    display: none;
+}
+#header {
+    height: 20%;
+    width: 100%;
+    font-size: 3.5vw;
+    margin-left: 2%;
+    user-select: none;
+    justify-content:space-around;
+    align-items: baseline;
+    flex-flow: column nowrap;
+}
+
+#items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    font-size: 1.5vw;
+    margin-top: 10%;
+    margin-right: 10%;
+    flex-flow: row wrap;
+    flex: 0 0 20%;
+
+}
+.item {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 3px 5px 2px 5px;
+    margin-bottom: 1.5%;
+    transition-duration: 0.2s;
+    border-radius: 2px;
+    user-select: none;
+}
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    cursor: pointer;
+}
+.disabledItem {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+/* @media screen and (max-width:800px) {
+    * {
+        font-size: 15px;
+    }
+    body {
+        background-size: cover;
+        background-position: 30% 50%;
+    }
+    .section {
+        flex-flow: column nowrap;
+    }
+    #items {
+        flex: 100%;
+        flex-flow: column nowrap;
+    }
+} */
